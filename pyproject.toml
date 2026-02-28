@@ -1,0 +1,23 @@
+[project]
+name = "stixy"
+version = "0.1.0"
+description = "A STIX bundle visualizer using ArangoDB"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "python-multipart",
+    "python-arango",
+    "jinja2",
+    "pydantic-settings",
+    "loguru",
+    "customtkinter",
+    "psutil",
+    "packaging",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "httpx",
+]
